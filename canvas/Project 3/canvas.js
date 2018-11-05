@@ -10,6 +10,7 @@ function Circle(x, y, dx, dy, radius, color) {
 	this.y = y;
 	this.dx = dx;
 	this.dy = dy;
+	this.ay = 1;
 	this.radius = radius;
 
 	this.draw = function() {
@@ -18,13 +19,33 @@ function Circle(x, y, dx, dy, radius, color) {
 		c.strokeStyle = color
 		c.stroke();
 	}
+	this.update = function() {
+
+		if (this.y + this.radius > innerHeight || this.y < innerHeight/2-radius) {
+			this.dy = -this.dy
+		}
+
+		this.y += this.dy
+		this.dy += this.ay
+
+		console.log(this.y)
+		this.draw()
+	}
 }
 var radius = Math.floor(Math.random()*(40-10+1)+10);;
 var x = Math.random() * (innerWidth - radius * 2) + radius;
 var y = (innerHeight - radius * 2) + radius;
 var dx = (Math.random() - 0.5) * 3;
-var dy = (Math.random() - 0.5) * 3;
+var dy = -5;
 
 cir = new Circle(x,y,dx,dy,radius,"red");
 
 cir.draw();
+
+
+function animate() {
+	requestAnimationFrame(animate);
+	c.clearRect(0,0,innerWidth,innerHeight)
+	cir.update()
+}
+animate()
