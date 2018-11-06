@@ -10,6 +10,18 @@ What I've read/am reading:
 ### Closures
 [Javascript Closures](http://www.jibbering.com/faq/notes/closures/)
 
+```javascript
+var digit_name = (function (){
+	var names = ['zero','one','two','three','four','five'];
+
+	return function (n){
+		return names[n]
+	};
+}());
+
+alert(digit_name(3));  // 'three'
+``` [source for example](https://www.linkedin.com/learning/the-good-parts-of-javascript-and-the-web/closure-examples)
+
 ### Functions
 
 [Function Expression vs Function Statement](https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname)
