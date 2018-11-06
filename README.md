@@ -13,3 +13,22 @@ What I've read/am reading:
 ### Functions
 
 [Function Expression vs Function Statement](https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname)
+
+#### 4 Ways to Call a Function
+
+##### Function form
+`functionObject(arguments)`
+
+##### Method form
+`thisObject.methodName(arguments)`
+`thisObject["methodName"](arguments)`
+
+##### Constructor form
+```javascript
+new FunctionObject(arguments
+```
+
+##### Apply form
+```javascript
+functionObject.apply(thisObject,[arguments])
+```
