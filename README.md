@@ -17,15 +17,19 @@ What I've read/am reading:
 #### 4 Ways to Call a Function
 
 ##### Function form
-`functionObject(arguments)`
+```javascript
+functionObject(arguments)
+```
 
 ##### Method form
-`thisObject.methodName(arguments)`
-`thisObject["methodName"](arguments)`
+```javascript
+thisObject.methodName(arguments)
+thisObject["methodName"](arguments)
+```
 
 ##### Constructor form
 ```javascript
-new FunctionObject(arguments
+new FunctionObject(arguments)
 ```
 
 ##### Apply form
