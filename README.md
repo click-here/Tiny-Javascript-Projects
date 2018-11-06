@@ -20,19 +20,24 @@ What I've read/am reading:
 ```javascript
 functionObject(arguments)
 ```
+Using Function form: `this` is set to the global object or undefined
 
 ##### Method form
 ```javascript
 thisObject.methodName(arguments)
 thisObject["methodName"](arguments)
 ```
+Using Method form: `this` is bound to `thisObject`
 
 ##### Constructor form
 ```javascript
 new FunctionObject(arguments)
 ```
+Using Constructor form: `this` is bound to new object
+
 
 ##### Apply form
 ```javascript
 functionObject.apply(thisObject,[arguments])
 ```
+Using Apply form: `this` is bound to `thisObject` because explicitly stated by user.
