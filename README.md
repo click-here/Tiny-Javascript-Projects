@@ -20,7 +20,8 @@ var digit_name = (function (){
 }());
 
 alert(digit_name(3));  // 'three'
-``` [source for example](https://www.linkedin.com/learning/the-good-parts-of-javascript-and-the-web/closure-examples)
+``` 
+[source for example](https://www.linkedin.com/learning/the-good-parts-of-javascript-and-the-web/closure-examples)
 
 ### Functions
 
