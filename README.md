@@ -9,3 +9,7 @@ What I've read/am reading:
 
 ### Closures
 [Javascript Closures](http://www.jibbering.com/faq/notes/closures/)
+
+### Functions
+
+[Function Expression vs Function Statement](https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname)
