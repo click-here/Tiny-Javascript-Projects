@@ -3,6 +3,8 @@ to improve my skills
 
 What I've read/am reading:
 
+[Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#constructorpatternjavascript)
+
 ### Scope
 [Stackoverflow Answer with Examples](https://stackoverflow.com/a/500459)
 
