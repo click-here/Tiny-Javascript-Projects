@@ -1,0 +1,38 @@
+.container {
+	display: grid;
+	grid-template-columns: [leftbar-start] 1fr [main-start] 10fr [main-end] 1fr [rightbar-end];
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+body {
+	background-color:black;
+	
+}
+.one {
+	grid-column: leftbar / main-start;
+	grid-row: 1 / 8;
+	background-color:blue;
+}
+
+.two { 
+  grid-column: main;
+  grid-row: 1 / 3;
+  background-color: red;
+}
+.three {
+  grid-column: main-end / rightbar;
+  grid-row: 1 / 8;
+  background-color: green;
+}
+
+.four {
+	grid-column: main;
+	grid-row: 3 / 8;
+	background-color: yellow;
+}
+
+.footer {
+	grid-column: 1 / 4;
+	grid-row: 8;
+	background-color: orange;
+}
