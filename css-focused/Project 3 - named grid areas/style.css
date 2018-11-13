@@ -1,11 +1,11 @@
 .container {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 80vh;
 	grid-template-areas:
-		"title title title"
-		"main rightbar sidebar"
-		"footer footer footer";
+		"title sidebar sidebar"
+		"main . rightbar"
+		"footer footer rightbar";
 
 }
 body {
