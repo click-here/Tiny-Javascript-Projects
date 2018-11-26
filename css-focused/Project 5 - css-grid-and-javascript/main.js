@@ -21,7 +21,7 @@ var addRadiobutton = function(){
     
     // build input elem
     var inputElem = document.createElement("input");
-    inputElem.setAttribute("type","radio");
+    inputElem.setAttribute("type","radio");    
     inputElem.setAttribute("name","colors");
     inputElem.setAttribute("id",result + "-id");
     inputElem.setAttribute("value",result);

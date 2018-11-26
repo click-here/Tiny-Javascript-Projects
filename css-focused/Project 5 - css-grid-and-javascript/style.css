@@ -2,13 +2,16 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 1fr;
+	grid-gap: 1em;
 }
 body {
 	margin: 0;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
-
-
 
 .grid-input {
 	background-color: #40798C;
+	color:white;
 }
